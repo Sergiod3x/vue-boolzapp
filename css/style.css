@@ -126,10 +126,10 @@
     .top.right{
         width: 30%;
     }
-/* 
-    .user-img{
-        width: 30%;
+
+    .core-chat{
+        background-image: url(../img/mine.jpg);
+        height: 100%;
+        background-size:auto
+
     }
-    .user-name{
-        width: 70%;
-    } */
