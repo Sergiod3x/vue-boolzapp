@@ -1,0 +1,134 @@
+/* CLASSI UTILITY */
+
+    /* TESTO */
+    .cw {
+        color: white;
+    }
+    .cb{
+        color:rgb(107,173,227);
+    }
+    .ts{
+        letter-spacing:3px
+    }
+    .tj{
+        text-align: justify;
+    }
+
+    /* ALLINEAMENTO */
+    .tac {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .tacr {
+        display:flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .tae {
+        display:flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .tas {
+        display:flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .tacl{
+        display:flex;
+        align-items: center;
+    }
+
+    /* WIDTH FULL */
+    .wfll{
+        width: 100%;
+    }
+
+    /* MARGIN/PADDING */
+    .mrg-xxs{
+        margin-top: 5px;
+    }
+    .mrg-s{
+        margin-top: 10px;
+        }
+    .mrg{
+        margin-top: 24px;
+        }
+    .mrg-l{
+        margin-top: 48px;
+        }  
+    .mrg-xl{
+        margin-top: 72px;
+        }  
+    .pdg{
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+    .pdg-l{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .pdg-xl{
+        padding-top: 72px;
+        padding-bottom: 72px;
+    }
+    .pdg-t{
+        padding-top: 24px;
+    }
+    .pdg-t-l{
+        padding-top: 48px;
+    }
+    .pdg-b{
+        padding-bottom: 24px;
+    }
+    .pdg-b-l{
+        padding-bottom: 48px;
+    }
+    .pdg-b-xl{
+        padding-bottom: 72px;
+    }
+
+
+    img{
+        width: 40px;
+        height: auto;
+        border-radius: 50%;
+    }
+/* START */
+
+/* SEZ 1 */
+
+    .app.container{
+        height: 90vh;
+    }
+
+    /* .top{
+     height: 150px;
+    } */
+
+    .top{
+        padding: 5px;
+        height: 60px;
+        line-height: 40px;
+        background-color: rgb(175, 175, 175);
+
+    }
+
+    .top.left{
+        width: 70%;
+    }
+
+    .top.right{
+        width: 30%;
+    }
+/* 
+    .user-img{
+        width: 30%;
+    }
+    .user-name{
+        width: 70%;
+    } */
