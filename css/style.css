@@ -104,6 +104,7 @@
 
     .app.container{
         height: 90vh;
+        display: flex;
     }
 
     /* .top{
