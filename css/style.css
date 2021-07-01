@@ -173,3 +173,11 @@
         height: 80vh;
         background-color: rgb(217, 219, 213);
     }
+
+    .sent{
+        margin: 20px;
+        background-color: red;
+    }
+    .received{
+        background-color: green;
+    }

@@ -5,6 +5,7 @@ new Vue(
         el: '#app',
         data: {
             contacts: [
+                
                 {
                     name: 'Michele',
                     avatar: '_1',
@@ -86,9 +87,10 @@ new Vue(
                             text: 'Si, ma preferirei andare al cinema',
                             status: 'received'
                         }
-                    ],
+                    ]
                 },
-            ]
+            ],
+           contactIndex : -1,
             
          
         },
@@ -112,7 +114,16 @@ new Vue(
             returnImg : function(index){
                 return ("./img/avatar" +this.contacts[index].avatar + ".jpg");
 
+            },
+            sentOrReceived : function(index) {
+                return ("message" + " " + this.contacts[1].messages[index].status);
+            
+                
+            },
+            updateIndex : function(index){
+                this.contactIndex = index;
             }
+
 
     }
     

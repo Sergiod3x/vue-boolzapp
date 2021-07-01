@@ -37,7 +37,7 @@
                             </div>
 
                             <div class="contacts-container">
-                                <div  class="contacts tacl" v-for="(parola, index) in contacts">
+                                <div  class="contacts tacl" @click="updateIndex(index)" v-for="(parola, index) in contacts">
                                    <img :src="returnImg(index)" alt="picture">
                                    <div class="user">  {{parola.name}} </div>
                                 </div>
@@ -61,7 +61,13 @@
                             </div>
                         
                             <div class="message-container">
-                                <div class="core-chat"></div>
+                                <div class="core-chat">
+                                    <div v-if ="contactIndex > -1">
+                                        <div  :class="sentOrReceived(index)" v-for="(parola, index) in contacts[contactIndex].messages">
+                                            <div class="msg sent">  {{parola.text}} </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="bottom-bar ">
                                     <div class="text "><i class="far fa-smile"></i><input  class="input-text" type="text"> <i class="fas fa-microphone"></i></div>    
                                 </div>
