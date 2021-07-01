@@ -20,9 +20,9 @@
 
 
             <!--APP CONTAINER -->
-            <div class="background-container tac">
+            <div class="background-container tahc">
                 <div class="app container mrg-l">
-                    <!-- <div class="row"> -->
+            
                         <div class="col-4 sidebar">
                             <div class="top-bar tac">
                                 <div class="top left tas">
@@ -34,9 +34,17 @@
                                     <div class="new-chat col-3"><i class="fas fa-comment-alt"></i></div>
                                     <div class="menu col-3"><i class="fas fa-ellipsis-v"></i></div>
                                 </div>
-
-
                             </div>
+
+                            <div class="contacts-container">
+                                <div  class="contacts tacl" v-for="(parola, index) in contacts">
+                                   <img :src="returnImg(index)" alt="picture">
+                                   <div class="user">  {{parola.name}} </div>
+                                </div>
+                            </div>
+
+
+
                             
                         </div>
                         <div class="col-8 chat">
@@ -47,13 +55,22 @@
                                 </div>
                                 <div class="top right tae">
                                     <div class="search col-1"><i class="fas fa-search"></i></i></div>
-                                <div class="allega col-1"><i class="fas fa-paperclip"></i></div>
-                                <div class="menu col-1"><i class="fas fa-ellipsis-v"></i></div>
+                                    <div class="allega col-1"><i class="fas fa-paperclip"></i></div>
+                                    <div class="menu col-1"><i class="fas fa-ellipsis-v"></i></div>
                                 </div>
-                        </div>
-                        <div class="core-chat"></div>
+                            </div>
+                        
+                            <div class="message-container">
+                                <div class="core-chat"></div>
+                                <div class="bottom-bar ">
+                                    <div class="text "><i class="far fa-smile"></i><input  class="input-text" type="text"> <i class="fas fa-microphone"></i></div>    
+                                </div>
+                            </div>
 
-                <!-- </div> -->
+                        </div>
+                 </div>
+
+                
             </div>
 
 

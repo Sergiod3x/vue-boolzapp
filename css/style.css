@@ -43,6 +43,11 @@
         align-items: center;
     }
 
+    .tahc{
+        display:flex;
+        justify-content: center;
+    }
+
     /* WIDTH FULL */
     .wfll{
         width: 100%;
@@ -101,6 +106,10 @@
 /* START */
 
 /* SEZ 1 */
+    .background-container{
+        background:linear-gradient(180deg, rgb(66, 148, 136),  rgb(217, 219, 213));
+        height: 1500px
+    }
 
     .app.container{
         height: 90vh;
@@ -115,7 +124,7 @@
         padding: 5px;
         height: 60px;
         line-height: 40px;
-        background-color: rgb(175, 175, 175);
+        background-color: rgb(217, 219, 213);
 
     }
 
@@ -129,7 +138,38 @@
 
     .core-chat{
         background-image: url(../img/mine.jpg);
-        height: 100%;
+        height:calc(100% - 30px);
         background-size:auto
 
+    }
+
+
+    .bottom-bar{
+        height: 30px;
+    }
+
+    input{
+        display: inline-block;
+        width:95%;
+        border-color: white;
+    }
+
+   
+
+    .sidebar{
+        background-color: white;
+        height: 60vh;
+
+    }
+
+    .contacts-container{
+        overflow: scroll;
+        background-color: white;
+        height: 80vh;
+    }
+
+    
+    .message-container{
+        height: 80vh;
+        background-color: rgb(217, 219, 213);
     }
