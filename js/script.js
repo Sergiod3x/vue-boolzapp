@@ -92,6 +92,7 @@ new Vue(
             ],
            contactIndex : -1,
            userMessage : "",
+           ricerca : "",
             
          
         },
@@ -124,23 +125,38 @@ new Vue(
             updateIndex : function(index){
                 this.contactIndex = index;
             },
-            sendMessage: function(){
+            getCurrentDateTime: function() {
                 const dateTimeNow = dayjs();
-                const dateTimeString = dateTimeNow.format("DD/MM/YYYY HH:mm:ss");
+                return dateTimeNow.format("DD/MM/YYYY HH:mm:ss");
 
+            },
+            receivedMessage: function (){
                 this.contacts[this.contactIndex].messages.push({
-                    date : dateTimeString,  
+                    date : this.getCurrentDateTime(),  
+                    text : "ok",
+                    status: "received",   
+                });
+            },
+            sendMessage: function(){
+                this.contacts[this.contactIndex].messages.push({
+                    date : this.getCurrentDateTime(),  
                     text : this.userMessage,
                     status: "sent",
                 });
 
                 this.userMessage = "";
+
+                setTimeout(() => {
+                  this.receivedMessage();
+                    
+                },1000)
             },
             removeMessage: function(index){
                 
                 this.contacts[this.contactIndex].messages.splice(index,1);
                  
-                }
+            },
+            
 
 
 

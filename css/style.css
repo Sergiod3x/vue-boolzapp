@@ -107,8 +107,8 @@
 
 /* SEZ 1 */
     .background-container{
-        background:linear-gradient(180deg, rgb(66, 148, 136),  rgb(217, 219, 213));
-        height: 1500px
+        background: linear-gradient(180deg, rgba(66,148,136,1) 15%, rgba(219,219,211,1) 15%);
+        height: 100vh
     }
 
     .app.container{

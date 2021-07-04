@@ -28,7 +28,7 @@
                             <div class="top-bar tac">
                                 <div class="top left tas">
                                     <div class="user-img"><img src="./img/avatar_1.jpg" alt=""></div>
-                                    <div class="user-name"> <h6>Nome Utente</h6> </div>    
+                                    <div class="user-name"> <h6>Sergio</h6> </div>    
                                 </div>
                                 <div class="top right tae">
                                     <div class="stato col-3"><i class="fas fa-circle-notch"></i></div>
@@ -38,6 +38,7 @@
                             </div>
 
                             <div class="contacts-container">
+                                <div class="text "><input v-model="ricerca" class="input-text" @keyup.enter="ricerca" type="text"></div>    
                                 <div  class="contacts tacl" @click="updateIndex(index)" v-for="(parola, index) in contacts">
                                    <img :src="returnImg(index)" alt="picture">
                                    <div class="user">  {{parola.name}} </div>
