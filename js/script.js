@@ -91,6 +91,7 @@ new Vue(
                 },
             ],
            contactIndex : -1,
+           userMessage : "",
             
          
         },
@@ -122,7 +123,25 @@ new Vue(
             },
             updateIndex : function(index){
                 this.contactIndex = index;
-            }
+            },
+            sendMessage: function(){
+                const dateTimeNow = dayjs();
+                const dateTimeString = dateTimeNow.format("DD/MM/YYYY HH:mm:ss");
+
+                this.contacts[this.contactIndex].messages.push({
+                    date : dateTimeString,  
+                    text : this.userMessage,
+                    status: "sent",
+                });
+
+                this.userMessage = "";
+            },
+            removeMessage: function(index){
+                
+                this.contacts[this.contactIndex].messages.splice(index,1);
+                 
+                }
+
 
 
     }
